@@ -15,10 +15,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
 
           <Route path="ds3" element={<Ds3 />} />
           <Route path="ets2" element={<Ets2 />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

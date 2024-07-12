@@ -8,7 +8,7 @@ export default function Home() {
       <Link className="div-ds3" to="/ds3">
         <div>
           <h1>Dark Souls III</h1>
-          <img src={require('/src/components/home/img/ds3-img.jpg')} alt="" />
+          <img src="./src/components/home/img/ds3-img.jpg" alt="" />
           <h3>Clique para acessar os Clips</h3>
         </div>
       </Link>

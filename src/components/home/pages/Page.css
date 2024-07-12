@@ -1,0 +1,19 @@
+.page-clips {
+  padding: 1rem;
+
+  text-align: center;
+
+  min-height: 65vh;
+
+  section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    video {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import '../Page.css';
+import elevadorthiago from '/src/components/home/pages/DS3/video/elevadorthiago.mp4';
 
 export default function Ds3() {
   const clips = [
     {
       id: crypto.randomUUID(),
       title: 'Elevador - Thiago',
-      url: '',
+      url: elevadorthiago,
       desc: 'Clip do elevador visão do Thiago.',
     },
     {

@@ -1,12 +1,13 @@
 import React from 'react';
 import '../Page.css';
+import driftthiago from '/src/components/home/pages/ETS2/video/driftthiago.mp4';
 
 export default function Ets2() {
   const clips = [
     {
       id: crypto.randomUUID(),
       title: 'Drift do thiago',
-      url: './src/components/home/pages/ETS2/video/driftthiago.mp4',
+      url: driftthiago,
       desc: 'Thiago dá um drift na contra mão e quase morre',
     },
     {

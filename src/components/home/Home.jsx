@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import DS3LOGO from './src/components/home/img/ds3-img.jpg';
+import DS3LOGO from '/src/components/home/img/ds3-img.jpg';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Link className="div-ets2" to="/ets2">
         <div>
           <h1>Euro Truck Simulator 2</h1>
-          <img src="./src/components/home/img/ets2-img.jpg" alt="" />
+          <img src="/src/components/home/img/ets2-img.jpg" alt="" />
           <h3>Clique para acessar os Clips</h3>
         </div>
       </Link>

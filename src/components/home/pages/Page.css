@@ -11,6 +11,13 @@
     flex-wrap: wrap;
     align-items: center;
 
+    margin-top: 2rem;
+
+    div {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
     video {
       width: 20rem;
       height: 20rem;

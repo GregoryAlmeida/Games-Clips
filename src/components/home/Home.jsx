@@ -5,23 +5,32 @@ import DS3LOGO from '/src/components/home/img/ds3-img.jpg';
 import ETS2LOGO from '/src/components/home/img/ets2-img.jpg';
 
 export default function Home() {
+  const games = [
+    {
+      id: 'ds3',
+      title: 'Dark Souls III',
+      url: DS3LOGO,
+      desc: 'Clique para acessar os Clips',
+    },
+    {
+      id: 'ets2',
+      title: 'Euro Truck Simulator 2',
+      url: ETS2LOGO,
+      desc: 'Clique para acessar os Clips',
+    },
+  ];
+
   return (
     <nav className="nav-board">
-      <Link className="div-ds3" to="/ds3">
-        <div>
-          <h1>Dark Souls III</h1>
-          <img src={DS3LOGO} alt="" />
-          <h3>Clique para acessar os Clips</h3>
-        </div>
-      </Link>
-
-      <Link className="div-ets2" to="/ets2">
-        <div>
-          <h1>Euro Truck Simulator 2</h1>
-          <img src={ETS2LOGO} alt="" />
-          <h3>Clique para acessar os Clips</h3>
-        </div>
-      </Link>
+      {games.map(({ id, title, url, desc }) => (
+        <Link className="link-games" key={id} to={`/${id}`}>
+          <div>
+            <h1>{title}</h1>
+            <img src={url} alt="" />
+            <h3>{desc}</h3>
+          </div>
+        </Link>
+      ))}
     </nav>
   );
 }

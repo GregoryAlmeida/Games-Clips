@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Page.css';
 import driftthiago from '/src/components/home/pages/ETS2/video/driftthiago.mp4';
+import contramao from '/src/components/home/pages/ETS2/video/velocidadenacontramaothiago.mp4';
 
 export default function Ets2() {
   const clips = [
@@ -13,7 +14,7 @@ export default function Ets2() {
     {
       id: crypto.randomUUID(),
       title: 'Velocidade na contra mão - thiago',
-      url: '',
+      url: contramao,
       desc: 'Risada do hero + velocidade do thiago na contra mão',
     },
   ];

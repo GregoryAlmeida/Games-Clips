@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Page.css';
 import elevadorthiago from '/src/components/home/pages/DS3/video/elevadorthiago.mp4';
+import thiagomimic from '/src/components/home/pages/DS3/video/thiagomimic.mp4';
 
 export default function Ds3() {
   const clips = [
@@ -12,9 +13,9 @@ export default function Ds3() {
     },
     {
       id: crypto.randomUUID(),
-      title: 'Elevador - Thiago',
-      url: '',
-      desc: 'Clip do elevador visão do Thiago.',
+      title: 'Thiago morrendo pra um mimic',
+      url: thiagomimic,
+      desc: 'Mimic fez nham nham na bunda do thiago',
     },
   ];
 

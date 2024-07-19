@@ -1,23 +1,31 @@
-import React, { useState } from 'react';
+import { React, useState } from 'react';
 import '../Page.css';
-import elevadorthiago from '/src/components/home/pages/DS3/video/elevadorthiago.mp4';
-import thiagomimic from '/src/components/home/pages/DS3/video/thiagomimic.mp4';
+import thiagotiros from '/src/components/home/pages/SOTF/video/thiagotiros.mp4';
+import chupacuatrazdobaiano from '/src/components/home/pages/SOTF/video/chupacuatrazdobaiano.mp4';
+olhosesbugalhados;
+import olhosesbugalhados from '/src/components/home/pages/SOTF/video/olhosesbugalhados.mp4';
 
-export default function Ds3() {
+export default function SOTF() {
   const [modal, setModal] = useState(false);
 
   const clips = [
     {
       id: crypto.randomUUID(),
-      title: 'Elevador - Thiago',
-      url: elevadorthiago,
-      desc: 'Clip do elevador visão do Thiago.',
+      title: 'Thiago enchendo o bixo de bala',
+      url: thiagotiros,
+      desc: 'Thiago pega gosto por atirar em indefesos no meio do confronto.',
     },
     {
       id: crypto.randomUUID(),
-      title: 'Thiago morrendo pra um mimic',
-      url: thiagomimic,
-      desc: 'Mimic fez nham nham na bunda do thiago',
+      title: 'Chupacu correndo atraz do Baiano - Thiago',
+      url: chupacuatrazdobaiano,
+      desc: 'Chupacu correndo atraz do Baiano querendo esbagaçar o preciso dele',
+    },
+    {
+      id: crypto.randomUUID(),
+      title: 'O cara com o olho esbugalhado - Thiago',
+      url: olhosesbugalhados,
+      desc: '(⊙ˍ⊙)',
     },
   ];
 
@@ -31,7 +39,7 @@ export default function Ds3() {
 
   return (
     <div className="page-clips">
-      <h1>Clips de Dark Souls 3</h1>
+      <h1>Clips de Sons of The Forest</h1>
 
       <section>
         {clips.map(({ id, title, url, desc }) => (
@@ -41,6 +49,7 @@ export default function Ds3() {
             <p>{desc}</p>
           </div>
         ))}
+
         {modal && (
           <span className="modal">
             <h1>{modal.title}</h1>

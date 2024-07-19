@@ -13,14 +13,58 @@
 
     margin-top: 2rem;
 
+    position: relative;
+
     div {
+      margin-top: 2rem;
       padding-top: 1rem;
       padding-bottom: 1rem;
+      cursor: pointer;
+      border-top: 2px solid #eee;
+      border-bottom: 2px solid #eee;
+      
     }
 
     video {
       width: 20rem;
       height: 20rem;
+    }
+
+    .modal {
+      border-radius: 5px;
+      padding: 1rem;
+      background-color: #55efc4;
+      position: absolute;
+      min-width: 90%;
+
+      h1 {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+
+      video {
+        padding: 1rem;
+        min-width: 90%;
+      }
+
+      p {
+        padding: 1rem;
+      }
+
+      button {
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        cursor: pointer;
+
+        border-radius: 5px;
+
+        min-width: 10rem;
+        width: 20%;
+
+        background-color: #eb4d4b;
+        color: white;
+      }
     }
   }
 }

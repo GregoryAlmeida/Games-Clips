@@ -1,23 +1,30 @@
 import { React, useState } from 'react';
 import '../Page.css';
-import driftthiago from '/src/components/home/pages/ETS2/video/driftthiago.mp4';
-import contramao from '/src/components/home/pages/ETS2/video/velocidadenacontramaothiago.mp4';
+import giganteamassandobaiano from '/src/components/home/pages/VALHEIM/video/giganteamassandobaiano.mp4';
+import problemacomportal from '/src/components/home/pages/VALHEIM/video/problemacomportal.mp4';
+import baianodespencando from '/src/components/home/pages/VALHEIM/video/baianodespencando.mp4';
 
-export default function Ets2() {
+export default function SOTF() {
   const [modal, setModal] = useState(false);
 
   const clips = [
     {
       id: crypto.randomUUID(),
-      title: 'Drift do thiago',
-      url: driftthiago,
-      desc: 'Thiago dá um drift na contra mão e quase morre',
+      title: 'Gigante amassando Baiano - Thiago',
+      url: giganteamassandobaiano,
+      desc: 'Baiano chamou gigante pra x1 e tomou amasso sem dó',
     },
     {
       id: crypto.randomUUID(),
-      title: 'Velocidade na contra mão - thiago',
-      url: contramao,
-      desc: 'Risada do hero + velocidade do thiago na contra mão',
+      title: 'Greg puto com baiano por causa de portal - Thiago',
+      url: problemacomportal,
+      desc: 'Baiano esquece o nome do portal e quase que nao consegue conectar essa porra',
+    },
+    {
+      id: crypto.randomUUID(),
+      title: 'Baiano despencando - Thiago',
+      url: baianodespencando,
+      desc: 'Baiano escorregou e caiu da torre, morreu mas passa bem',
     },
   ];
 
@@ -31,7 +38,7 @@ export default function Ets2() {
 
   return (
     <div className="page-clips">
-      <h1>Clips de Euro Truck Simulator 2</h1>
+      <h1>Clips de Sons of The Forest</h1>
 
       <section>
         {clips.map(({ id, title, url, desc }) => (

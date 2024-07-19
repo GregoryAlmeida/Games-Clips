@@ -3,6 +3,8 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import DS3LOGO from '/src/components/home/img/ds3-img.jpg';
 import ETS2LOGO from '/src/components/home/img/ets2-img.jpg';
+import SOTFLOGO from '/src/components/home/img/SOTF.jfif';
+import VALHEIMLOGO from '/src/components/home/img/valheim-img.jpg';
 
 export default function Home() {
   const games = [
@@ -16,6 +18,18 @@ export default function Home() {
       id: 'ets2',
       title: 'Euro Truck Simulator 2',
       url: ETS2LOGO,
+      desc: 'Clique para acessar os Clips',
+    },
+    {
+      id: 'sotf',
+      title: 'Sons of The Forest',
+      url: SOTFLOGO,
+      desc: 'Clique para acessar os Clips',
+    },
+    {
+      id: 'valheim',
+      title: 'VALHEIM',
+      url: VALHEIMLOGO,
       desc: 'Clique para acessar os Clips',
     },
   ];

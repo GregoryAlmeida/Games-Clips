@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
-import { Link } from 'react-router-dom';
+import { Link, useActionData } from 'react-router-dom';
 import DS3LOGO from '/src/components/home/img/ds3-img.jpg';
 import ETS2LOGO from '/src/components/home/img/ets2-img.jpg';
 import SOTFLOGO from '/src/components/home/img/SOTF.jfif';

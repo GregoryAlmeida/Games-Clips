@@ -44,7 +44,11 @@ export default function Ds3() {
         {modal && (
           <span className="modal">
             <h1>{modal.title}</h1>
-            <video src={modal.url} controls />
+            <video
+              src={modal.url}
+              controls
+              onLoadStart={({ target }) => (target.volume = 0.2)}
+            />
             <p>{modal.desc}</p>
             <button onClick={() => setModal(false)}>Fechar</button>
           </span>
